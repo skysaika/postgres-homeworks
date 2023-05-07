@@ -1,7 +1,7 @@
 -- SQL-команды для создания таблиц
 CREATE TABLE customers
 (
-	customer_id varchar(10) PRIMARY KEY,
+	customer_id char(5) PRIMARY KEY,
 	company_name varchar(50) NOT NULL,
 	contact_name varchar(50) NOT NULL
 );
