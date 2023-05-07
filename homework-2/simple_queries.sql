@@ -12,3 +12,18 @@ SELECT ...
 
 
 -- 5. количество стран, в которые отгружался товар (таблица orders, колонка ship_country)
+
+SELECT contact_name, city
+FROM customers;
+
+SELECT order_id, shipped_date - order_date
+FROM orders;
+
+SELECT DISTINCT city
+FROM customers;
+
+SELECT COUNT(*)
+FROM orders;
+
+SELECT COUNT(DISTINCT ship_country)
+FROM orders
