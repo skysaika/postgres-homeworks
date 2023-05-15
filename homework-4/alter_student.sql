@@ -15,14 +15,14 @@ ALTER TABLE public.student ADD COLUMN middle_name varchar;
 ALTER TABLE public.student DROP COLUMN middle_name;
 
 -- 4. Переименовать колонку birthday в birth_date
-ALTER TABLE public.student RENAME birth_day TO birth_date;
+ALTER TABLE public.student RENAME birthday TO birth_date;
 
 -- 5. Изменить тип данных колонки phone на varchar(32)
 ALTER TABLE public.student ALTER COLUMN phone SET DATA TYPE varchar(32);
 
 -- 6. Вставить три любых записи с автогенерацией идентификатора
 
-INSERT INTO public.student (first_name, last_name, birth_day, phone)
+INSERT INTO public.student (first_name, last_name, birth_date, phone)
 VALUES
     ('Saysuu', 'Ichin-Norbu', '1981-11-10', +7991),
 	('Elena', 'Harlamova', '2005-04-11', +7992),
